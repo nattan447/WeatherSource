@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherDetails"
+    android:background="@color/blueBackground"
+    >
+
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textColor="@color/gold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/placeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageSituation"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:src="@drawable/cloudy"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+        <TextView
+            android:id="@+id/weatherSituation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clouds"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Precipitations"
+            android:textSize="23dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/precipitations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:textSize="16dp"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

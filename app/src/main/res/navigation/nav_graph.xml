@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home"
+    >
+    <fragment android:id="@+id/home"
+        android:name="com.example.weathersource.Home"
+        android:label="Home"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        >
+        <action
+            android:id="@+id/action_home_to_weatherDetails"
+            app:destination="@+id/weatherDetails"
+            />
+    </fragment>
+
+    <fragment android:id="@+id/weatherDetails"
+        android:name="com.example.weathersource.WeatherDetails"
+        android:label="Weather Details"
+
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        >
+    </fragment>
+
+
+</navigation>
