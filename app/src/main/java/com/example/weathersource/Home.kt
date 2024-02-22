@@ -11,6 +11,7 @@ import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.Gson
@@ -116,7 +117,12 @@ class Home : Fragment() {
 
                             bundle.putString("weatherData",gson.toJson(weatherData))
 
-                            findNavController().navigate(R.id.action_home_to_weatherDetails, bundle)
+                            findNavController().navigate(R.id.action_home_to_weatherDetails, bundle,NavOptions.Builder().
+                            setEnterAnim(R.anim.fade_in)
+                                .setExitAnim(R.anim.fade_out)
+                                .setPopEnterAnim(R.anim.fade_in)
+                                .setPopExitAnim(R.anim.fade_out)
+                                .build())
 
                         }
                         else{
